@@ -1,0 +1,616 @@
+/* ======================== Estilos Globales ======================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ======================== Header y Navegación ======================== */
+
+header nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* ======================== Iconos Flotantes ======================== */
+
+.iconos-flotantes {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iconos-flotantes a {
+    margin: 10px 5px;
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.iconos-flotantes a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
+
+/* ======================== Footer ======================== */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: auto;
+}
+/* ======================== Mensaje de Redirección ======================== */
+
+.mensaje {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ecdada;
+    padding: 10px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2000;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* ======================== Contenido Principal ======================== */
+
+main {
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+/* ======================== Enlaces ======================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f39c12;
+}
+
+/* ======================== Navegación Sticky (opcional) ======================== */
+
+header nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* ======================== PAQUETES CSS INICIO ======================== */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+
+/* Sección de destinos */
+#destinos {
+    padding: 60px 30px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#destinos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #00695c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Contenedor de tarjetas */
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+    background-color: #fafafa;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.tarjeta h3 {
+    font-size: 1.5rem;
+    margin: 15px 0 10px;
+    color: #00796b;
+}
+
+.tarjeta p {
+    margin: 8px 20px;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* Responsive en móviles */
+@media (max-width: 768px) {
+    #destinos h2 {
+        font-size: 2rem;
+    }
+
+    .tarjeta h3 {
+        font-size: 1.3rem;
+    }
+
+    .iconos-flotantes {
+        left: 10px;
+    }
+
+    .iconos-flotantes a img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Animación opcional para los mensajes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ======================== contacto CSS INICIO ======================== */
+/* ESTILOS GENERALES DE LA SECCIÓN DE CONTACTO */
+#contacto {
+    background: #f9f9f9;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+#contacto h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2e7d32;
+}
+
+#contacto p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+#contacto .tarjeta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.08);
+    padding: 30px;
+}
+
+/* INFORMACIÓN DE CONTACTO */
+.contacto-info {
+    flex: 1 1 300px;
+    padding-right: 20px;
+    border-right: 2px solid #e0e0e0;
+}
+
+.contacto-info p {
+    margin: 12px 0;
+    font-size: 1rem;
+}
+
+.contacto-info strong {
+    color: #2e7d32;
+}
+
+/* FORMULARIO */
+.contacto-formulario {
+    flex: 1 1 300px;
+}
+
+.contacto-formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-formulario label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    border-color: #2e7d32;
+    outline: none;
+    box-shadow: 0 0 5px rgba(46,125,50,0.5);
+}
+
+.contacto-formulario button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto-formulario button:hover {
+    background-color: #1b5e20;
+}
+
+/* MAPA */
+#contacto .tarjeta iframe {
+    flex: 1 1 100%;
+    margin-top: 40px;
+    border-radius: 10px;
+    height: 400px;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 960px) {
+    #contacto .tarjeta {
+        flex-direction: column;
+    }
+
+    .contacto-info {
+        border-right: none;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+    #contacto .tarjeta iframe {
+        height: 300px;
+    }
+}
+
+
+/* =========================estilos de Promociones===================================== */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Sección de promociones */
+#promociones {
+    background-color: #ffffff;
+    padding: 40px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Título principal */
+#promociones h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Párrafo introductorio */
+#promociones p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+/* Contenedor de las promociones */
+.promociones-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Estilo de cada item de promoción */
+.promocion-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promocion-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen de la promoción */
+.promocion-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Contenido del texto de la promoción */
+.promocion-text {
+    padding: 20px;
+}
+
+.promocion-text h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.promocion-text p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.promocion-text em {
+    font-style: italic;
+    color: #555;
+}
+
+/* Estilo de las condiciones en cada promoción */
+.promocion-text p em {
+    font-weight: bold;
+}
+
+/* Estilo para el CTA (call to action) */
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    color: #333;
+}
+
+.btn-promocion {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-promocion:hover {
+    background-color: #FF4F3C;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #promociones h2 {
+        font-size: 2rem;
+    }
+
+    .promocion-item {
+        padding: 15px;
+    }
+
+    .cta p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Efecto de transición de imágenes */
+.promocion-item:hover .promocion-img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Sombra de las tarjetas en la vista móvil */
+@media screen and (max-width: 480px) {
+    .promociones-container {
+        grid-template-columns: 1fr;
+    }
+
+    .promocion-img {
+        height: 180px;
+    }
+}
+/* =========================estilos de Testimonios===================================== */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Sección de testimonios */
+#testimonios {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+#testimonios h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#testimonios p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de testimonios */
+.testimonios-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* Estilo de cada testimonio */
+.testimonio-item {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Imagen del cliente */
+.testimonio-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Nombre del cliente */
+.testimonio-nombre {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Cargo o lugar del cliente */
+.testimonio-lugar {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Opinión del cliente */
+.testimonio-opinion {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    #testimonios h2 {
+        font-size: 2rem;
+    }
+
+    .testimonio-opinion {
+        font-size: 1rem;
+    }
+}

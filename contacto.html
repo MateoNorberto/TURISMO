@@ -1,0 +1,70 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paquetes</title>
+    <link rel="stylesheet" href="turismo.css"> 
+    <script defer src="https://app.embed.im/snow.js"></script>
+    <script src="index.js"></script>
+ </head>
+ <body>
+    <header>
+        <nav>
+         <a href="index.html">Destinos</a>
+         <a href="paquetes.html">Paquetes</a>
+         <a href="contacto.html">Contacto</a>
+         <a href="promociones.html">Promociones</a>
+         <a href="testimonios.html">Testimonios</a>
+     </nav>
+ </header> 
+    <section id="contacto">
+            <h2>Contacto</h2>
+            <p>¿Tienes preguntas? Contáctanos para más información.</p>
+            
+            <div class="tarjeta">
+                <!-- Sección de contacto a la izquierda -->
+                <div class="contacto-info">
+                    <p><strong>Teléfono:</strong> +51 987 654 321</p>
+                    <p><strong>Email:</strong> contacto@sistemadeturismo.com</p>
+                    <p><strong>Dirección:</strong> Av. Principal 123, Cusco, Perú</p>
+                    <p><strong>Horario de Atención:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+                </div>
+                
+                <!-- Sección de formulario a la izquierda -->
+                <div class="contacto-formulario">
+                    <form action="enviar-consulta.php" method="post">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                
+                <!-- Mapa a la derecha -->
+                <div class="tarjeta">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.954956402222!2d-71.96897298472857!3d-13.531950390492493!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6757e9a67a3%3A0x65f3dbdb2acb7031!2sPlaza%20de%20Armas%20del%20Cusco!5e0!3m2!1ses!2spe!4v1714959600000!5m2!1ses!2spe" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+        <footer>
+        <p class="footer-text">&copy; 2025 Sistema de Turismo. Todos los derechos reservados al NORBERT.</p>
+        <p>Visítanos en <a href="#contacto">Contáctanos</a> para obtener más información.</p>
+    </footer>
+ </body>
+ </html>
+ 
