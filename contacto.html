@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="turismo.css"> 
     <script defer src="https://app.embed.im/snow.js"></script>
     <script src="index.js"></script>
+    <script src="turismo.db"></script>
  </head>
  <body>
     <header>
@@ -35,17 +36,19 @@
                 <div class="contacto-formulario">
                     <form action="enviar-consulta.php" method="post">
                         <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+<input type="text" id="nombre" name="nombre" required>
+
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+
+<label for="mensaje">Mensaje:</label>
+<textarea id="mensaje" name="mensaje" required></textarea>
+
                 
                         <button type="submit">Enviar</button>
                     </form>
                 </div>
+                
                 
                 <!-- Mapa a la derecha -->
                 <div class="tarjeta">
